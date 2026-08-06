@@ -1,2 +1,2 @@
 # SAP-CPI-Integration-Artifacts-Test
-this repo to connect sap cpi details
+first changes to connect the integration flow to Github
