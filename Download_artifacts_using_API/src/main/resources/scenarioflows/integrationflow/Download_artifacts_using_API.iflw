@@ -827,7 +827,7 @@
             <bpmn2:incoming>SequenceFlow_6183722</bpmn2:incoming>
             <bpmn2:outgoing>SequenceFlow_6183727</bpmn2:outgoing>
         </bpmn2:callActivity>
-        <bpmn2:callActivity id="CallActivity_578648" name="Get Package ID">
+        <bpmn2:callActivity id="CallActivity_578648" name="Get Pakage ID">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>scriptFunction</key>
@@ -861,74 +861,6 @@
             <bpmn2:incoming>SequenceFlow_6</bpmn2:incoming>
             <bpmn2:outgoing>SequenceFlow_578649</bpmn2:outgoing>
         </bpmn2:callActivity>
-        <bpmn2:serviceTask id="ServiceTask_6183735" name="Download the Artifact Zip File">
-            <bpmn2:extensionElements>
-                <ifl:property>
-                    <key>componentVersion</key>
-                    <value>1.0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>activityType</key>
-                    <value>ExternalCall</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>cmdVariantUri</key>
-                    <value>ctype::FlowstepVariant/cname::ExternalCall/version::1.0.4</value>
-                </ifl:property>
-            </bpmn2:extensionElements>
-            <bpmn2:incoming>SequenceFlow_6183733</bpmn2:incoming>
-            <bpmn2:outgoing>SequenceFlow_6183736</bpmn2:outgoing>
-        </bpmn2:serviceTask>
-        <bpmn2:serviceTask id="ServiceTask_5" name="Get PackageList">
-            <bpmn2:extensionElements>
-                <ifl:property>
-                    <key>componentVersion</key>
-                    <value>1.0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>activityType</key>
-                    <value>ExternalCall</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>cmdVariantUri</key>
-                    <value>ctype::FlowstepVariant/cname::ExternalCall/version::1.0.4</value>
-                </ifl:property>
-            </bpmn2:extensionElements>
-            <bpmn2:incoming>SequenceFlow_578646</bpmn2:incoming>
-            <bpmn2:outgoing>SequenceFlow_6</bpmn2:outgoing>
-        </bpmn2:serviceTask>
-        <bpmn2:serviceTask id="ServiceTask_6183721" name="Get Artifact List">
-            <bpmn2:extensionElements>
-                <ifl:property>
-                    <key>componentVersion</key>
-                    <value>1.0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>activityType</key>
-                    <value>ExternalCall</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>cmdVariantUri</key>
-                    <value>ctype::FlowstepVariant/cname::ExternalCall/version::1.0.4</value>
-                </ifl:property>
-            </bpmn2:extensionElements>
-            <bpmn2:incoming>SequenceFlow_6183719</bpmn2:incoming>
-            <bpmn2:outgoing>SequenceFlow_6183722</bpmn2:outgoing>
-        </bpmn2:serviceTask>
-        <bpmn2:endEvent id="EndEvent_2" name="End">
-            <bpmn2:extensionElements>
-                <ifl:property>
-                    <key>componentVersion</key>
-                    <value>1.1</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>cmdVariantUri</key>
-                    <value>ctype::FlowstepVariant/cname::MessageEndEvent/version::1.1.0</value>
-                </ifl:property>
-            </bpmn2:extensionElements>
-            <bpmn2:incoming>SequenceFlow_6183736</bpmn2:incoming>
-            <bpmn2:messageEventDefinition/>
-        </bpmn2:endEvent>
         <bpmn2:callActivity id="CallActivity_6183732" name="Store Artifact Id and Version">
             <bpmn2:extensionElements>
                 <ifl:property>
@@ -1105,9 +1037,77 @@
             <bpmn2:incoming>SequenceFlow_6183727</bpmn2:incoming>
             <bpmn2:outgoing>SequenceFlow_6183730</bpmn2:outgoing>
         </bpmn2:callActivity>
+        <bpmn2:serviceTask id="ServiceTask_6183735" name="Download the Artifact Zip File">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>ExternalCall</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::ExternalCall/version::1.0.4</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_6183733</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_6183736</bpmn2:outgoing>
+        </bpmn2:serviceTask>
+        <bpmn2:serviceTask id="ServiceTask_5" name="Get PackageList">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>ExternalCall</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::ExternalCall/version::1.0.4</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_578646</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_6</bpmn2:outgoing>
+        </bpmn2:serviceTask>
+        <bpmn2:serviceTask id="ServiceTask_6183721" name="Get Artifact List">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>ExternalCall</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::ExternalCall/version::1.0.4</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_6183719</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_6183722</bpmn2:outgoing>
+        </bpmn2:serviceTask>
+        <bpmn2:endEvent id="EndEvent_2" name="End">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.1</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::MessageEndEvent/version::1.1.0</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_6183736</bpmn2:incoming>
+            <bpmn2:messageEventDefinition/>
+        </bpmn2:endEvent>
         <bpmn2:startEvent id="StartEvent_578645" name="Start Timer 1">
             <bpmn2:outgoing>SequenceFlow_578646</bpmn2:outgoing>
-            <bpmn2:timerEventDefinition id="TimerEventDefinition_208801">
+            <bpmn2:timerEventDefinition id="TimerEventDefinition_173826">
                 <bpmn2:extensionElements>
                     <ifl:property>
                         <key>scheduleKey</key>
